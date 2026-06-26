@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南蛮 | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-logo">南蛮</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#about" data-ja="自己紹介" data-en="About">自己紹介</a></li>
+            <li><a href="#projects" data-ja="プロジェクト" data-en="Projects">プロジェクト</a></li>
+            <li><a href="#contact" data-ja="連絡先" data-en="Contact">連絡先</a></li>
+        </ul>
+        <div class="nav-right">
+            <button class="lang-toggle" id="langToggle">EN</button>
+            <button class="menu-toggle" id="menuToggle" aria-label="メニュー">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="hero-content">
+            <p class="hero-greeting" data-ja="はじめまして、" data-en="Hello, I'm">はじめまして、</p>
+            <h1 class="hero-name">南蛮</h1>
+            <p class="hero-title" data-ja="将来企画" data-en="Future Planning">将来企画</p>
+            <div class="hero-links">
+                <a href="https://github.com/" class="btn btn-outline" target="_blank" rel="noopener">GitHub</a>
+                <a href="#contact" class="btn btn-primary" data-ja="連絡する" data-en="Contact Me">連絡する</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+        <div class="container fade-in">
+            <h2 class="section-title" data-ja="自己紹介" data-en="About Me">自己紹介</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p data-ja="はじめまして、南蛮と申します。将来企画として、新しい価値の創造と未来を見据えた企画・立案に取り組んでいます。変化を恐れず、長期的な視点で物事を考え、社会に貢献できる仕事を追求しています。"
+                       data-en="Nice to meet you. I am Nanban, specializing in Future Planning. I focus on creating new value and developing forward-thinking strategies. I embrace change, think long-term, and pursue work that contributes to society.">
+                        はじめまして、南蛮と申します。将来企画として、新しい価値の創造と未来を見据えた企画・立案に取り組んでいます。変化を恐れず、長期的な視点で物事を考え、社会に貢献できる仕事を追求しています。
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3 data-ja="スキル・強み" data-en="Skills & Strengths">スキル・強み</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag" data-ja="企画立案" data-en="Planning">企画立案</span>
+                        <span class="skill-tag" data-ja="戦略思考" data-en="Strategic Thinking">戦略思考</span>
+                        <span class="skill-tag" data-ja="リサーチ" data-en="Research">リサーチ</span>
+                        <span class="skill-tag" data-ja="プレゼンテーション" data-en="Presentation">プレゼンテーション</span>
+                        <span class="skill-tag" data-ja="課題解決" data-en="Problem Solving">課題解決</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section section-alt" id="projects">
+        <div class="container fade-in">
+            <h2 class="section-title" data-ja="プロジェクト" data-en="Projects">プロジェクト</h2>
+            <div class="projects-grid">
+
+                <!--
+                    ============================
+                    プロジェクトカード テンプレート
+                    以下をコピーして追加してください
+                    ============================
+
+                <div class="project-card">
+                    <div class="project-card-header">
+                        <span class="project-icon">📁</span>
+                        <div class="project-links">
+                            <a href="GitHubリポジトリURL" class="project-link" target="_blank" rel="noopener" title="GitHub">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                            </a>
+                            <a href="デモURL" class="project-link" target="_blank" rel="noopener" title="Live Demo">
+                                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <h3 class="project-title" data-ja="プロジェクト名（日本語）" data-en="Project Name (English)">プロジェクト名</h3>
+                    <p class="project-desc"
+                       data-ja="プロジェクトの説明（日本語）"
+                       data-en="Project description (English)">
+                        プロジェクトの説明をここに記載します。
+                    </p>
+                    <div class="project-tags">
+                        <span class="project-tag">タグ1</span>
+                        <span class="project-tag">タグ2</span>
+                    </div>
+                </div>
+                -->
+
+                <div class="project-card project-card-empty">
+                    <span class="project-empty-icon">🚀</span>
+                    <p data-ja="プロジェクトは近日公開予定です" data-en="Projects coming soon">プロジェクトは近日公開予定です</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+        <div class="container fade-in">
+            <h2 class="section-title" data-ja="連絡先" data-en="Contact">連絡先</h2>
+            <p class="contact-desc"
+               data-ja="お気軽にご連絡ください。"
+               data-en="Feel free to reach out anytime.">
+                お気軽にご連絡ください。
+            </p>
+            <div class="contact-links">
+                <a href="mailto:your@email.com" class="contact-item">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                            <polyline points="22,6 12,13 2,6"/>
+                        </svg>
+                    </span>
+                    <span>your@email.com</span>
+                </a>
+                <a href="https://github.com/" class="contact-item" target="_blank" rel="noopener">
+                    <span class="contact-icon">
+                        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                        </svg>
+                    </span>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2026 南蛮. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
